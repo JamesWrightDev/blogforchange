@@ -1,10 +1,10 @@
 ---
 title: A Real Blog Post
-date: 2020-03-04T00:00:00Z
+date: 2020-03-04T00:00:00.000+00:00
 published: true
 featured: true
 description: lorem lorem
-image: "/content/assets/pexels-photo-3693581.jpeg"
+image: "/content/assets/pexels-photo-1647962.jpeg"
 blocks:
 - template: blog-text
   text: Lorem lorem

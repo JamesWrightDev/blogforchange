@@ -25,6 +25,7 @@ fields:
   label: Blocks
   template_types:
   - two-column
+  - blog-text
   config:
     min: 
     max: 

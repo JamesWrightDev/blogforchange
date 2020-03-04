@@ -44,3 +44,4 @@ fields:
     max: 
 pages:
 - content/blog/a-real-blog-post.md
+- content/blog/a-second-blog.md

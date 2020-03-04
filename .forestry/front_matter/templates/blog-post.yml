@@ -20,6 +20,9 @@ fields:
 - name: published
   type: boolean
   label: Published
+- name: featured
+  type: boolean
+  label: Featured
 - name: blocks
   type: blocks
   label: Blocks

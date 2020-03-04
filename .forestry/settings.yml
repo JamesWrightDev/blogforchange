@@ -4,10 +4,14 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
+- type: directory
   path: "./content"
-  label: Posts
+  label: Posts Blog
+  create: all
   match: "**/*"
+  new_doc_ext: ".md"
+  templates:
+  - blog-post
 - type: heading
   label: Heading Bio
 - type: document

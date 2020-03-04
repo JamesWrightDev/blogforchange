@@ -42,3 +42,5 @@ fields:
   config:
     min: 
     max: 
+pages:
+- content/blog/a-real-blog-post.md

@@ -2,6 +2,11 @@
 label: Blog Post
 hide_body: false
 fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
 - name: published
   type: boolean
   label: Published

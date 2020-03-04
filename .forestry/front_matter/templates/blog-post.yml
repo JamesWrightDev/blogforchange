@@ -20,10 +20,13 @@ fields:
 - name: published
   type: boolean
   label: Published
-  default: true
+  default: false
 - name: featured
   type: boolean
   label: Featured
+  showOnly:
+    field: featured
+    value: true
 - name: image
   type: file
   config:

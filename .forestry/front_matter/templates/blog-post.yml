@@ -20,6 +20,7 @@ fields:
 - name: published
   type: boolean
   label: Published
+  default: true
 - name: featured
   type: boolean
   label: Featured

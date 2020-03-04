@@ -12,3 +12,5 @@ fields:
   config:
     min: 
     max: 
+pages:
+- "./content/blog/blog_post.md"

@@ -1,0 +1,13 @@
+// Variables
+$bp-small: 320px;
+$bp-medium: 720px;
+$bp-large: 1080px;
+
+// Mixins
+@mixin mq-medium {
+  @media (min-width: $bp-medium) { @content; }
+}
+
+@mixin mq-large {
+  @media (min-width: $bp-large) { @content; }
+}

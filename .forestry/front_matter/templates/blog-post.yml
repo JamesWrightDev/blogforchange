@@ -19,5 +19,14 @@ fields:
   config:
     min: 
     max: 
+- name: group
+  type: field_group_list
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Group
+  showOnly:
+    field: published
 pages:
 - content/blog/123.md

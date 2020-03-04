@@ -146,9 +146,8 @@ $color-secondary: #00AB84;
     }
   }
 
-  .c-post--featured {
-    border: solid 1px red;
-    flex-basis: 100%;
+  .c-post-card--featured {
+    flex-basis: 90%;
   }
 
   nav {

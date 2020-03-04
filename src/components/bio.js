@@ -39,7 +39,7 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div class="c-bio">
+    <div className="c-bio">
       <Image
         className="c-bio__image"
         fadeIn={true}
@@ -54,7 +54,7 @@ const Bio = () => {
         <a href={`https://twitter.com/${social.twitter}`}>
           You should follow him on Twitter
         </a>
-
+        </p>
         <div className="c-bio__social">
           <a href="https://uk.linkedin.com/in/fiona-points" target="_blank">
               <Image
@@ -65,7 +65,7 @@ const Bio = () => {
               alt="" />
             </a>
         </div>
-      </p>
+
     </div>
   )
 }

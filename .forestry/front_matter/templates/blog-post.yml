@@ -44,3 +44,4 @@ fields:
     max: 
 pages:
 - content/blog/123.md
+- content/blog/this-is-a-blog-post.md

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import  Bio from '../components/bio'
 import '../styles/main.scss';
 
 const Layout = ({ location, title, children }) => {
@@ -29,7 +30,10 @@ const Layout = ({ location, title, children }) => {
   }
   return (
     <div className="wrapper">
-      <header className="c-header">{header}</header>
+      <header className="c-header">
+        {header}
+        <Bio/>
+        </header>
       <main className="c-main">{children}</main>
     </div>
   )

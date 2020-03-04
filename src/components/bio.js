@@ -12,9 +12,16 @@ import Image from "gatsby-image"
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/profile.jpeg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 75, height: 75) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      linkedin: file(absolutePath: { regex: "/linkedin.png/" }) {
+        childImageSharp {
+          fixed(width: 25, height: 25) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -32,7 +39,14 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div>
+    <div class="c-bio">
+      <Image
+        className="c-bio__image"
+        fadeIn={true}
+        fixed={data.avatar.childImageSharp.fixed}
+        objectFit="cover"
+        objectPosition="50% 50%"
+        alt="" />
       <p>
         Written by <strong>{author}</strong> who lives and works in San
         Francisco building useful things.
@@ -40,6 +54,17 @@ const Bio = () => {
         <a href={`https://twitter.com/${social.twitter}`}>
           You should follow him on Twitter
         </a>
+
+        <div className="c-bio__social">
+          <a href="https://uk.linkedin.com/in/fiona-points" target="_blank">
+              <Image
+              fadeIn={true}
+              fixed={data.linkedin.childImageSharp.fixed}
+              objectFit="cover"
+              objectPosition="50% 50%"
+              alt="" />
+            </a>
+        </div>
       </p>
     </div>
   )

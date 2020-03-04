@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: directory
   path: "./content"
-  label: Posts Blog
+  label: Blog
   create: all
   match: "**/*"
   new_doc_ext: ".md"
@@ -14,9 +14,6 @@ sections:
   - blog-post
 - type: heading
   label: Heading Bio
-- type: document
-  path: "./content"
-  label: Bio
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''

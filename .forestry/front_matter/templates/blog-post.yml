@@ -1,4 +1,14 @@
 ---
 label: Blog Post
 hide_body: false
-fields: []
+fields:
+- name: published
+  type: boolean
+  label: Published
+- name: blocks
+  type: blocks
+  label: Blocks
+  template_types: []
+  config:
+    min: 
+    max: 

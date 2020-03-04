@@ -25,7 +25,7 @@ fields:
   type: boolean
   label: Featured
   showOnly:
-    field: featured
+    field: published
     value: true
 - name: image
   type: file

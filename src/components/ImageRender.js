@@ -13,7 +13,7 @@ const ImageRender = props => (
               absolutePath
               name
               childImageSharp {
-                fluid(maxWidth: 40) {
+                fluid(maxWidth: 400, maxHeight: 250,  quality:100) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -33,7 +33,7 @@ const ImageRender = props => (
       }
 
       //const imageSizes = image.node.childImageSharp.sizes; sizes={imageSizes}
-      return <Img alt={props.alt} fluid={image.node.childImageSharp.fluid}
+      return <Img fadeIn={true} alt={props.alt} fluid={image.node.childImageSharp.fluid}
         objectFit="cover"
       objectPosition="50% 50%"
       alt=""/>;

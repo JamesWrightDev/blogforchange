@@ -2,7 +2,7 @@
 title: A Real Blog Post
 date: 2020-03-04T00:00:00.000+00:00
 published: true
-featured: true
+featured: false
 description: lorem lorem
 image: "/content/assets/pexels-photo-1647962.jpeg"
 blocks:

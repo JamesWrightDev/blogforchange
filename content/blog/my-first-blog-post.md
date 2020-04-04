@@ -7,5 +7,9 @@ image: ''
 blocks:
 - template: blog-text
   text: This is some blog text
+- template: two-column
+  image_positon: left
+  text: This is a two column image
+  image: "/content/assets/spagetti.jpeg"
 
 ---

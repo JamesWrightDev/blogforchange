@@ -42,3 +42,5 @@ fields:
   config:
     min: 
     max: 
+pages:
+- content/blog/my-first-blog-post.md

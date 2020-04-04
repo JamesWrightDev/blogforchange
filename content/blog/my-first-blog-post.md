@@ -6,7 +6,10 @@ featured: false
 image: "/content/assets/pexels-photo-1647962.jpeg"
 blocks:
 - template: blog-text
-  text: This is some blog text
+  text: |-
+    # This is some blog text
+
+    ### sadasd
 - template: two-column
   image_positon: left
   text: This is a two column image

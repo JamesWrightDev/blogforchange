@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import ImageRender from '../components/ImageRender';
-
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import React from "react";
+import { Link, graphql } from "gatsby";
+// import ImageRender from '../components/ImageRender';
+import PostCard from "../components/PostCard";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
@@ -13,28 +13,21 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       {posts.map(({ node }) => {
-        const imageSrc = node.frontmatter.image;
         const title = node.frontmatter.title || node.fields.slug;
         const featured = node.frontmatter.featured
-          ? 'c-post-card--featured'
-          : '';
+          ? "c-post-card--featured"
+          : "";
+        console.log(node);
+        const content = node.frontmatter.description || node.excerpt;
         return (
-          <article className={`c-post-card ${featured}`} key={node.fields.slug}>
-            <ImageRender filename={imageSrc} />
-            <header>
-              <h3>
-                <Link to={node.fields.slug}>{title}</Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
+          <PostCard
+            key={node.fields.slug}
+            title={title}
+            date={node.frontmatter.date}
+            slug={node.fields.slug}
+            imageSrc={node.frontmatter.image}
+            content={content}
+          />
         );
       })}
     </Layout>

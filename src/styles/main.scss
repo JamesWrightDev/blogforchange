@@ -36,7 +36,6 @@ $color-secondary: #00AB84;
 
   .c-header {
     background-color: #f9f9f9;
-    width: 100%;
     padding: 1rem 2rem;
 
     @include mq-large {
@@ -169,6 +168,10 @@ $color-secondary: #00AB84;
 
   .c-post-card--featured {
     flex-basis: 100%;
-    width: 100%;
+    width: 90%;
+
+    @include mq-large {
+      width: 100%;
+    }
   }
 }

@@ -1,7 +1,7 @@
 ---
 title: My first blog post
 date: 2020-04-03T23:00:00Z
-published: false
+published: true
 featured: false
 image: "/content/assets/pexels-photo-1647962.jpeg"
 blocks:

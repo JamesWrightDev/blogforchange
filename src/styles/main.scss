@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&display=swap');
 @import './normalize.scss';
 @import './mixins.scss';
-
 @import './type.scss';
-
 
 // Vars
 $color-secondary: #00AB84;
@@ -11,15 +9,35 @@ $color-secondary: #00AB84;
 .wrapper {
   max-width: 100%;
   position: relative;
-  font-family: 'Open Sans', sans-serif;;
   overflow: hidden;
+  font-family: 'Open Sans', Arial, sans-serif;
 
+  nav {
+    width: 100%;
+    padding: 0 3rem;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 24px 0;
+      padding: 0;
+
+      li {
+        list-style-type: none;
+        color: $color-secondary;
+
+        a {
+          font-weight: 800;
+          color: $color-secondary;
+        }
+      }
+    }
+  }
 
   .c-header {
-    background-color: 	#f9f9f9;
+    background-color: #f9f9f9;
     width: 100%;
     padding: 1rem 2rem;
-
 
     @include mq-large {
       position: fixed;
@@ -28,12 +46,12 @@ $color-secondary: #00AB84;
       padding-left: 3rem;
     }
 
-    h1,h3 {
+    h1,
+    h3 {
       font-size: 32px;
-      text-transform: uppercase;
       font-weight: 300;
+      text-transform: uppercase;
       letter-spacing: 1px;
-      text-transform: lowercase;
       margin: 12px 0;
 
       @include mq-large {
@@ -94,8 +112,7 @@ $color-secondary: #00AB84;
   .c-post-card {
     width: 90%;
     padding: 1rem;
-
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
     @include mq-large {
       flex-basis: 45%;
@@ -106,12 +123,14 @@ $color-secondary: #00AB84;
       font-size: 28px;
       margin: 12px 0;
     }
+
     small {
       display: block;
       font-weight: 800;
       margin-bottom: 24px;
       color: $color-secondary;
     }
+
     section {
       font-weight: 300;
     }
@@ -131,11 +150,13 @@ $color-secondary: #00AB84;
       border-left: solid 5px $color-secondary;
     }
 
-    h2,h3 {
+    h2,
+    h3 {
       font-weight: 400;
     }
 
-    p, li{
+    p,
+    li {
       font-weight: 300;
       line-height: 28px;
     }
@@ -149,26 +170,5 @@ $color-secondary: #00AB84;
   .c-post-card--featured {
     flex-basis: 100%;
     width: 100%;
-  }
-
-  nav {
-    width: 100%;
-    padding: 0 3rem;
-    ul {
-      display: flex;
-      justify-content: space-between;
-      margin: 24px 0;
-      padding: 0;
-
-      li {
-        list-style-type: none;
-        color: $color-secondary;
-
-        a {
-          font-weight: 800;
-          color: $color-secondary;
-        }
-      }
-    }
   }
 }

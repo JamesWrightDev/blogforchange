@@ -1,13 +1,6 @@
-/**
- * Bio component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Image from 'gatsby-image';
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -35,39 +28,44 @@ const Bio = () => {
         }
       }
     }
-  `)
+  `);
 
-  const { author, social } = data.site.siteMetadata
+  const { author, social } = data.site.siteMetadata;
   return (
     <div className="c-bio">
       <Image
         className="c-bio__image"
-        fadeIn={true}
+        fadeIn
         fixed={data.avatar.childImageSharp.fixed}
         objectFit="cover"
         objectPosition="50% 50%"
-        alt="" />
+        alt=""
+      />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
+        Written by
+        {' '}
+        <strong>{author}</strong>
+        {' '}
+        who lives and works in San
         Francisco building useful things.
-        {` `}
+        {' '}
         <a href={`https://twitter.com/${social.twitter}`}>
           You should follow him on Twitter
         </a>
-        </p>
-        <div className="c-bio__social">
-          <a href="https://uk.linkedin.com/in/fiona-points" target="_blank">
-              <Image
-              fadeIn={true}
-              fixed={data.linkedin.childImageSharp.fixed}
-              objectFit="cover"
-              objectPosition="50% 50%"
-              alt="" />
-            </a>
-        </div>
-
+      </p>
+      <div className="c-bio__social">
+        <a href="https://uk.linkedin.com/in/fiona-points" target="_blank" rel="noopener noreferrer">
+          <Image
+            fadeIn
+            fixed={data.linkedin.childImageSharp.fixed}
+            objectFit="cover"
+            objectPosition="50% 50%"
+            alt=""
+          />
+        </a>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Bio
+export default Bio;

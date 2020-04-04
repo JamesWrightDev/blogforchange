@@ -9,6 +9,12 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-stylelint",
+      options: {
+        files: ["src/styles/*.scss"],
+      },
+    },
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,

@@ -10,7 +10,6 @@ const PostCard = (props) => {
     imageSrc,
     content,
     slug  } = props;
-    console.log(slug);
   return (
     <article className={`c-post-card`} key={slug}>
       <ImageRender filename={imageSrc} />

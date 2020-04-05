@@ -15,6 +15,7 @@ module.exports = {
         files: ["src/styles/*.scss"],
       },
     },
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,

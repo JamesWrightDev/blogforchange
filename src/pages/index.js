@@ -17,8 +17,6 @@ const BlogIndex = ({ data, location }) => {
         const featured = node.frontmatter.featured
           ? "c-post-card--featured"
           : "";
-        console.log(node);
-        const content = node.frontmatter.description || node.excerpt;
         return (
           <PostCard
             key={node.fields.slug}
@@ -26,7 +24,6 @@ const BlogIndex = ({ data, location }) => {
             date={node.frontmatter.date}
             slug={node.fields.slug}
             imageSrc={node.frontmatter.image}
-            content={content}
           />
         );
       })}
@@ -56,7 +53,6 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            description
             blocks {
               template
               text

@@ -10,6 +10,8 @@ blocks:
     # This is some blog text
 
     ### sadasd
+
+    adadas
 - template: two-column
   image_positon: left
   text: This is a two column image

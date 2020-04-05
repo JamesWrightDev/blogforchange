@@ -8,3 +8,5 @@ fields:
     required: true
   label: Name
   description: Enter your ename
+pages:
+- content/bio/bio.md

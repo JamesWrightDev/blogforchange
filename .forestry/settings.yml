@@ -16,8 +16,6 @@ sections:
   new_doc_ext: md
   templates:
   - blog-post
-- type: heading
-  label: Heading Bio
 upload_dir: content/assets
 public_path: "/content/assets"
 front_matter_path: ''

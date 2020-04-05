@@ -22,5 +22,14 @@ fields:
     schema:
       format: markdown
   label: Description
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
 pages:
 - content/bio/bio.md

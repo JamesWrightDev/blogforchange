@@ -1,4 +1,10 @@
 ---
 label: Bio Template
 hide_body: true
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+  description: Enter your ename

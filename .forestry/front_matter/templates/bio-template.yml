@@ -8,16 +8,19 @@ fields:
     required: true
   label: Name
   description: Enter your ename
-- name: description
-  type: text
-  config:
-    required: false
-  label: Description
-  description: Enter a description
 - name: linkedin
   type: text
   config:
     required: false
   label: Linkedin
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
 pages:
 - content/bio/bio.md

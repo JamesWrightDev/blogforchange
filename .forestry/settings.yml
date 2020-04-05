@@ -5,9 +5,8 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: content/bio
+  path: content/bio/bio.md
   label: Bio
-  match: "**/*"
 - type: directory
   path: content/blog
   label: Blog Post

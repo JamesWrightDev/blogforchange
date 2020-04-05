@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: content/bio
-  label: Bio
-  match: "**/*"
 - type: directory
   path: content/blog
   label: Blog Post
@@ -16,8 +12,6 @@ sections:
   new_doc_ext: md
   templates:
   - blog-post
-- type: heading
-  label: Heading Bio
 upload_dir: content/assets
 public_path: "/content/assets"
 front_matter_path: ''

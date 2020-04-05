@@ -8,5 +8,16 @@ fields:
     required: true
   label: Name
   description: Enter your ename
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
+  description: Enter a description
+- name: linkedin
+  type: text
+  config:
+    required: false
+  label: Linkedin
 pages:
 - content/bio/bio.md

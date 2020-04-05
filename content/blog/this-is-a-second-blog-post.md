@@ -10,5 +10,9 @@ blocks:
     adlsjgasdgf
 
     ## asdasd
+- template: two-column
+  image_positon: left
+  text: sdfasdf
+  image: ''
 
 ---

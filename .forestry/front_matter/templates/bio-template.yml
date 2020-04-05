@@ -22,14 +22,10 @@ fields:
     schema:
       format: markdown
   label: Description
-- name: date
-  type: datetime
-  label: date
-  description: ''
+- name: profile_image
+  type: file
   config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: false
+    maxSize: 250
+  label: Profile Image
 pages:
 - content/bio/bio.md
